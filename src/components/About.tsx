@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <section id="about" className="py-24 px-6">
@@ -8,16 +10,21 @@ export default function About() {
         <div className="w-16 h-1 bg-blue-600 mx-auto mb-12 rounded-full" />
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Profile Image Placeholder */}
+          {/* Profile Image */}
           <div className="flex justify-center">
-            <div className="w-64 h-64 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-white text-6xl font-bold shadow-lg">
-              DK
-            </div>
+            <Image
+              src="/my.jpg"
+              alt="권득천 프로필 사진"
+              width={256}
+              height={320}
+              className="w-64 rounded-2xl object-cover object-top shadow-lg"
+              priority
+            />
           </div>
 
           <div>
             {/* 개인 정보 */}
-            <ul className="space-y-3 mb-8 text-sm">
+            <ul className="space-y-4 mb-8 text-base">
               <li className="flex items-center gap-3">
                 <span className="w-20 font-semibold text-zinc-800 dark:text-zinc-200">이름</span>
                 <span className="text-zinc-600 dark:text-zinc-400">권득천 (Kwon Deuk Cheon)</span>

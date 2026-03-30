@@ -8,14 +8,16 @@ export default function Hero() {
         <p className="text-sm font-medium tracking-widest uppercase text-zinc-500 dark:text-zinc-400 mb-4">
           Welcome to my portfolio
         </p>
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-          Hi, I&apos;m{" "}
-          <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-            Kwon Deuk Cheon
-          </span>
+        <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-2">
+          Hi, I&apos;m
         </h1>
-        <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 mb-10 max-w-xl mx-auto leading-relaxed">
-          17년차 풀스택 개발자. 코드를 사랑하고, AI와 함께 새로운 가능성을 만들어갑니다.
+        <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent whitespace-nowrap">
+          Kwon Deuk Cheon
+        </h1>
+        <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+          17년차 풀스택 개발자.
+          <br />
+          개발을 즐기고, AI와 함께 새로운 가능성을 만들어갑니다.
         </p>
         <div className="flex gap-4 justify-center">
           <a
