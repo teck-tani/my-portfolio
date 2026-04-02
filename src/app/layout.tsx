@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "Personal portfolio website",
+  title: "권득천 | 풀스택 웹 개발자 포트폴리오",
+  description:
+    "풀스택 Java 웹 개발자 권득천의 포트폴리오. 삼성 생태계 프로젝트 다수 수행.",
 };
 
 export default function RootLayout({
@@ -24,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="ko"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>

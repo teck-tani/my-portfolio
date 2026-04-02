@@ -3,11 +3,11 @@
 import { useState } from "react";
 
 const navLinks = [
-  { href: "#hero", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Projects" },
-  { href: "#contact", label: "Contact" },
+  { href: "#hero", label: "홈" },
+  { href: "#about", label: "소개" },
+  { href: "#career", label: "경력" },
+  { href: "#skills", label: "기술" },
+  { href: "#projects", label: "프로젝트" },
 ];
 
 export default function Header() {
@@ -17,7 +17,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur border-b border-zinc-200 dark:border-zinc-800">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 h-16">
         <a href="#hero" className="text-xl font-bold tracking-tight">
-          Portfolio
+          DCKwon
         </a>
 
         {/* Desktop Nav */}
@@ -37,7 +37,7 @@ export default function Header() {
         <button
           className="md:hidden p-2"
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle menu"
+          aria-label="메뉴 열기"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {mobileOpen ? (
