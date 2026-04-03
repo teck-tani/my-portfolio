@@ -241,5 +241,73 @@ export const pilgrimsoftPortfolio: CompanyPortfolio = {
         },
       ],
     },
+    {
+      id: "cdc-mobile",
+      title: "CDC WMS Mobile",
+      subtitle: "CDC Lift — 창고관리시스템 (WMS) 모바일 앱",
+      description:
+        "한국타이어 창고 현장 작업자를 위한 WMS 모바일 앱입니다. 타이어 입고·출고·도크 관리 등 현장 작업을 모바일에서 수행하며, 바코드 스캔 기반으로 팔레트·시리얼을 처리합니다.",
+      techStack: [
+        "JavaScript",
+        "jQuery",
+        "Cordova",
+        "SQLite",
+      ],
+      highlights: [
+        "도크 관리 — GR(입고)/GI(출고) 구분, 완료율 표시, 차량 배차 순서 관리 개발",
+        "입고 처리 — 팔레트 바코드·시리얼(타이어 개별) 스캔 및 수량 검증 개발",
+        "출고(피킹) — 피킹 오더 목록, 팔레트 스캔 검증, 완료율 추적 개발",
+      ],
+      screenshots: [
+        {
+          src: "/img/cdc/picking-list.png",
+          alt: "피킹 오더 목록",
+          type: "mobile" as const,
+          caption: "날짜·차량번호 필터링 피킹 오더 목록",
+        },
+        {
+          src: "/img/cdc/picking-detail.png",
+          alt: "피킹 상세",
+          type: "mobile" as const,
+          caption: "피킹 오더 상세 — 자재별 수량 및 GR 현황",
+        },
+        {
+          src: "/img/cdc/picking-pallet-scan.png",
+          alt: "피킹 팔레트 스캔",
+          type: "mobile" as const,
+          caption: "팔레트 바코드 스캔을 통한 피킹 검증",
+        },
+        {
+          src: "/img/cdc/picking-serial-scan.png",
+          alt: "피킹 시리얼 스캔",
+          type: "mobile" as const,
+          caption: "타이어 시리얼 바코드 스캔 및 작업 완료 처리",
+        },
+        {
+          src: "/img/cdc/palletizing-list.png",
+          alt: "팔레타이징 목록",
+          type: "mobile" as const,
+          caption: "팔레타이징 오더 목록 조회",
+        },
+        {
+          src: "/img/cdc/palletizing-detail.png",
+          alt: "팔레타이징 상세",
+          type: "mobile" as const,
+          caption: "팔레타이징 오더 상세 및 팔레트 작업 진행",
+        },
+        {
+          src: "/img/cdc/palletizing-pallet-scan.png",
+          alt: "팔레타이징 팔레트 스캔",
+          type: "mobile" as const,
+          caption: "팔레트 바코드 스캔",
+        },
+        {
+          src: "/img/cdc/palletizing-serial-scan.png",
+          alt: "팔레타이징 시리얼 스캔",
+          type: "mobile" as const,
+          caption: "시리얼 스캔 후 작업 대기·완료 처리",
+        },
+      ],
+    },
   ],
 };
