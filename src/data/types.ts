@@ -45,6 +45,32 @@ export interface Training {
   description: string;
 }
 
+export interface ProjectDetail {
+  id: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  techStack: string[];
+  highlights: string[];
+  screenshots: {
+    src: string;
+    alt: string;
+    placeholder?: boolean;
+    type?: "mobile" | "web";
+    caption?: string;
+  }[];
+}
+
+export interface CompanyPortfolio {
+  companyName: string;
+  client: string;
+  period: { start: string; end: string };
+  role: string;
+  summary: string;
+  techStack: string[];
+  projects: ProjectDetail[];
+}
+
 export interface ProfileData {
   name: { ko: string; en: string };
   birthDate: string;

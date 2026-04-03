@@ -411,6 +411,6 @@ export const careers: CareerEntry[] = [
       "HTML",
       "CSS",
     ],
-    portfolioSlug: "hankook-tire",
+    portfolioSlug: "pilgrimsoft",
   },
 ];
