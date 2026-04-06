@@ -2,33 +2,36 @@ import { skills } from "@/data/skills";
 
 const levelColors = {
   expert:
-    "bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300",
+    "bg-teal-100 text-teal-800 dark:bg-teal-900/40 dark:text-teal-300",
   advanced:
-    "bg-cyan-100 text-cyan-700 dark:bg-cyan-900/40 dark:text-cyan-300",
+    "bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-300",
   intermediate:
-    "bg-zinc-100 text-zinc-600 dark:bg-zinc-700 dark:text-zinc-300",
+    "bg-stone-100 text-stone-600 dark:bg-stone-700 dark:text-stone-300",
   learning:
     "bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300",
 };
 
 const levelLabels = {
-  expert: "Expert",
-  advanced: "Advanced",
-  intermediate: "Intermediate",
-  learning: "Learning",
+  expert: "Expert (숙련)",
+  advanced: "Advanced (상급)",
+  intermediate: "Intermediate (중급)",
+  learning: "Learning (학습 중)",
 };
 
 export default function Skills() {
+  const mainSkills = skills.filter((g) => g.category !== "Learning");
+  const learningGroup = skills.find((g) => g.category === "Learning");
+
   return (
-    <section id="skills" className="py-24 px-6">
+    <section id="skills" className="py-20 px-6">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          기술 스택
-        </h2>
-        <div className="w-16 h-1 bg-blue-600 mx-auto mb-12 rounded-full" />
+        <div className="flex items-baseline gap-4 mb-4">
+          <span className="text-sm font-mono text-stone-500 dark:text-stone-400">03</span>
+          <h2 className="font-display text-2xl md:text-3xl font-bold leading-tight">기술 스택</h2>
+        </div>
 
         {/* Legend */}
-        <div className="flex flex-wrap justify-center gap-3 mb-8">
+        <div className="flex flex-wrap gap-3 mb-10 ml-8">
           {(Object.keys(levelLabels) as Array<keyof typeof levelLabels>).map(
             (level) => (
               <span
@@ -41,13 +44,13 @@ export default function Skills() {
           )}
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {skills.map((group) => (
-            <div
-              key={group.category}
-              className="p-6 rounded-2xl bg-white dark:bg-zinc-800 shadow-sm"
-            >
-              <h3 className="text-lg font-semibold mb-4">{group.category}</h3>
+        {/* Main Skills — flat list, no cards */}
+        <div className="grid md:grid-cols-2 gap-x-12 gap-y-8">
+          {mainSkills.map((group) => (
+            <div key={group.category}>
+              <h3 className="text-sm font-semibold text-stone-800 dark:text-stone-200 uppercase tracking-wide mb-3">
+                {group.category}
+              </h3>
               <div className="flex flex-wrap gap-2">
                 {group.items.map((skill) => (
                   <span
@@ -61,6 +64,23 @@ export default function Skills() {
             </div>
           ))}
         </div>
+
+        {/* Learning — separated aside */}
+        {learningGroup && (
+          <div className="mt-10 pt-8 border-t border-stone-200 dark:border-stone-700">
+            <p className="text-sm text-stone-500 dark:text-stone-400 mb-3">현재 학습 중</p>
+            <div className="flex flex-wrap gap-2">
+              {learningGroup.items.map((skill) => (
+                <span
+                  key={skill.name}
+                  className={`px-3 py-1.5 text-sm rounded-full ${levelColors[skill.level]}`}
+                >
+                  {skill.name}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
