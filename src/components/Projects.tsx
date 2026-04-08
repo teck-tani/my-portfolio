@@ -17,8 +17,8 @@ export default function Projects() {
     <section id="projects" className="pt-16 pb-20 px-6 bg-stone-50 dark:bg-stone-900/50">
       <div className="max-w-3xl mx-auto">
         <div className="flex items-baseline gap-4 mb-12">
-          <span className="text-sm font-mono text-stone-500 dark:text-stone-400">04</span>
-          <h2 className="font-display text-2xl md:text-3xl font-bold leading-tight">사이드 프로젝트</h2>
+          <span className="text-sm font-mono text-stone-500 dark:text-stone-400">02</span>
+          <h2 className="font-display text-2xl md:text-3xl font-bold leading-tight">개인 프로젝트</h2>
         </div>
 
         <div className="space-y-6">
@@ -72,7 +72,7 @@ export default function Projects() {
         </div>
 
         <p className="text-sm text-stone-500 dark:text-stone-400 mt-8 ml-1">
-          AI 앱, Next.js 웹유틸 등 사이드 프로젝트 추가 예정
+          AI 앱, Next.js 웹유틸 등 개인 프로젝트 추가 예정
         </p>
       </div>
     </section>

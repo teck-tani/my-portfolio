@@ -20,9 +20,9 @@ export default function Home() {
       <main id="main">
         <Hero />
         <About />
+        <Projects />
         <Career />
         <Skills />
-        <Projects />
         <Contact />
       </main>
       <Footer />

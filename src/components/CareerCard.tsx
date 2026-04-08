@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import type { CareerEntry } from "@/data/types";
 
@@ -40,6 +40,16 @@ function calcDuration(start: string, end: string): string {
 
 export default function CareerCard({ entry }: { entry: CareerEntry }) {
   const [expanded, setExpanded] = useState(false);
+  const isOngoing = entry.period.end === "현재";
+  const [duration, setDuration] = useState(() =>
+    isOngoing ? "" : calcDuration(entry.period.start, entry.period.end)
+  );
+
+  useEffect(() => {
+    if (isOngoing) {
+      setDuration(calcDuration(entry.period.start, entry.period.end));
+    }
+  }, [isOngoing, entry.period.start, entry.period.end]);
 
   return (
     <div className="relative pl-8 pb-8 group">
@@ -73,7 +83,7 @@ export default function CareerCard({ entry }: { entry: CareerEntry }) {
                 {entry.type}
               </span>
               <span className="text-xs text-stone-500 dark:text-stone-400">
-                {entry.period.start} ~ {entry.period.end} · {calcDuration(entry.period.start, entry.period.end)}
+                {entry.period.start} ~ {entry.period.end}{duration && ` · ${duration}`}
               </span>
             </div>
 
@@ -147,8 +157,8 @@ export default function CareerCard({ entry }: { entry: CareerEntry }) {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                 </svg>
               </div>
-              <span className="text-xs font-semibold text-stone-600 dark:text-stone-300">
-                포트폴리오
+              <span className="text-xs font-semibold text-stone-600 dark:text-stone-300 text-center">
+                포트폴리오<br />상세보기
               </span>
             </Link>
           )}

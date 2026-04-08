@@ -28,7 +28,7 @@ export default function Career() {
     <section id="career" className="pt-28 pb-20 px-6 bg-stone-50 dark:bg-stone-900/50">
       <div className="max-w-5xl mx-auto">
         <div className="flex items-baseline gap-4 mb-4">
-          <span className="text-sm font-mono text-stone-500 dark:text-stone-400">02</span>
+          <span className="text-sm font-mono text-stone-500 dark:text-stone-400">03</span>
           <h2 className="font-display text-2xl md:text-3xl font-bold leading-tight">경력</h2>
         </div>
 
