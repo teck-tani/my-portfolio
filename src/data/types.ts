@@ -12,6 +12,7 @@ export interface CareerEntry {
   details: string[];
   techStack: string[];
   portfolioSlug?: string;
+  screenshots?: { src: string; alt: string; caption?: string }[];
 }
 
 export interface SkillGroup {

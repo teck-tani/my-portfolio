@@ -383,6 +383,9 @@ export const careers: CareerEntry[] = [
     ],
     techStack: ["Java", "SQL"],
     portfolioSlug: "samsung-bio-dqm",
+    screenshots: [
+      { src: "/img/DQM/DQM.jpg", alt: "DQXpress 데이터 품질 관리 대시보드", caption: "이해를 돕기 위한 샘플 사진입니다. (보안 때문에 실제 화면 사진이 없습니다.)" },
+    ],
   },
   {
     id: 22,
