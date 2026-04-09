@@ -50,6 +50,7 @@ export interface ProjectDetail {
   id: string;
   title: string;
   subtitle: string;
+  summary?: string;
   description: string;
   techStack: string[];
   highlights: string[];

@@ -24,6 +24,7 @@ export const pilgrimsoftPortfolio: CompanyPortfolio = {
       id: "sms-2",
       title: "SMS 2.0",
       subtitle: "Sales Management System (영업 관리 시스템)",
+      summary: "글로벌 영업사원을 위한 2단계 인증과 중국/해외 지도 연동을 구현한 하이브리드 앱",
       description:
         "글로벌 영업사원의 고객 방문·주문·매출·재고를 통합 관리하는 하이브리드 웹·모바일 시스템입니다. 미국/중국 등 글로벌 사용자를 대상으로 운영되며, 2단계 인증, 바이두/구글 지도 연동 등 다양한 기능을 개발했습니다.",
       techStack: [
@@ -100,6 +101,7 @@ export const pilgrimsoftPortfolio: CompanyPortfolio = {
       title: "EZ-HEIMS 2.0 Mobile",
       subtitle:
         "Hankook Equipment Information Management System (설비 보전 관리)",
+      summary: "프론트엔드부터 백엔드 API까지, 공장 설비 보전 앱을 처음부터 끝까지 혼자 만들었습니다.",
       description:
         "한국타이어 공장의 설비 보전 요청·계획·예방보전·가동현황을 관리하는 하이브리드 모바일 앱입니다. 프론트엔드부터 백엔드 API까지 전체를 개발했으며, 다국어(한/영/헝가리어)를 지원합니다.",
       techStack: [
@@ -210,6 +212,7 @@ export const pilgrimsoftPortfolio: CompanyPortfolio = {
       id: "shep",
       title: "SHEP - 지게차 안전점검 관리",
       subtitle: "Safety Health Environment Protection (지게차 관리 시스템)",
+      summary: "ERD 설계부터 REST API, SAP 연동, 자동 배치까지 시스템 전체를 설계·개발했습니다.",
       description:
         "한국타이어 공장의 지게차 일일 안전점검·정비·결함 관리 시스템입니다. 모바일 점검용 REST API 전체와 웹 관리 페이지를 개발했으며, SAP 연동 및 자동 배치 처리를 구현했습니다.",
       techStack: [
@@ -245,6 +248,7 @@ export const pilgrimsoftPortfolio: CompanyPortfolio = {
       id: "cdc-mobile",
       title: "CDC WMS Mobile",
       subtitle: "CDC Lift — 창고관리시스템 (WMS) 모바일 앱",
+      summary: "바코드 스캔 기반으로 타이어 입고·출고·피킹을 현장에서 바로 처리하는 모바일 앱",
       description:
         "한국타이어 창고 현장 작업자를 위한 WMS 모바일 앱입니다. 타이어 입고·출고·도크 관리 등 현장 작업을 모바일에서 수행하며, 바코드 스캔 기반으로 팔레트·시리얼을 처리합니다.",
       techStack: [

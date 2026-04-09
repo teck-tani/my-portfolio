@@ -378,10 +378,12 @@ export const careers: CareerEntry[] = [
     type: "프리랜서",
     description: "삼성바이오 데이터 품질 관리(DQM) 시스템 구축",
     details: [
-      "데이터 검증 SQL Rule 설계 및 개발",
-      "자동 메일 리포팅 시스템 개발",
+      "데이터 품질 지표(유효성, 정확성, 일관성, 유일성, 적시성) 룰셋 설계 및 개발",
+      "일일 데이터 적재 및 품질 검증 자동화",
+      "검증 결과 대시보드 및 자동 메일 리포팅 시스템 개발",
+      "오류 데이터 원인 분석 및 시정 조치 가이드",
     ],
-    techStack: ["Java", "SQL"],
+    techStack: ["Java", "HTML", "JavaScript", "SQL", "PL/SQL"],
     portfolioSlug: "samsung-bio-dqm",
     screenshots: [
       { src: "/img/DQM/DQM.jpg", alt: "DQXpress 데이터 품질 관리 대시보드", caption: "이해를 돕기 위한 샘플 사진입니다. (보안 때문에 실제 화면 사진이 없습니다.)" },

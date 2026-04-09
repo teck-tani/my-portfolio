@@ -60,6 +60,14 @@ export default function PilgrimsoftPage() {
                 </p>
               </div>
 
+              {project.summary && (
+                <div className="border-l-4 border-teal-600 dark:border-teal-500 pl-5 py-3 mb-8 bg-teal-50/50 dark:bg-teal-900/10 rounded-r-lg">
+                  <p className="text-lg font-medium text-zinc-800 dark:text-zinc-200">
+                    {project.summary}
+                  </p>
+                </div>
+              )}
+
               <p className="text-zinc-600 dark:text-zinc-300 mb-8">
                 {project.description}
               </p>
