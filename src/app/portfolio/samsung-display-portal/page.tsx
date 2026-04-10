@@ -6,7 +6,7 @@ export default function SamsungDisplayPortalPage() {
       <div className="max-w-4xl mx-auto">
         {/* 뒤로가기 */}
         <Link
-          href="/#career"
+          href="/#career-samsung-display-portal"
           className="inline-flex items-center gap-1 text-sm text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 mb-8 transition-colors"
         >
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -52,7 +52,7 @@ export default function CareerCard({ entry }: { entry: CareerEntry }) {
   }, [isOngoing, entry.period.start, entry.period.end]);
 
   return (
-    <div className="relative pl-8 pb-8 group">
+    <div id={entry.portfolioSlug ? `career-${entry.portfolioSlug}` : undefined} className="relative pl-8 pb-8 group">
       {/* Timeline dot */}
       <div
         className={`absolute left-0 top-1 w-4 h-4 rounded-full border-2 border-white dark:border-stone-900 ${categoryDotColors[entry.category]} shadow-sm z-10`}
