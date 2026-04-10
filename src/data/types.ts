@@ -22,7 +22,7 @@ export interface SkillGroup {
 
 export interface SkillItem {
   name: string;
-  level: "expert" | "advanced" | "intermediate" | "learning";
+  level: "expert" | "advanced" | "intermediate";
 }
 
 export interface Education {

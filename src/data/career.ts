@@ -95,7 +95,8 @@ export const careers: CareerEntry[] = [
       "JMS: Job 모니터링 시스템 개발",
       "SANTA: HPC 사용률 분석 시스템 개발",
     ],
-    techStack: ["HTML", "JavaScript", "jQuery", "Struts", "MyBatis"],
+    techStack: ["HTML", "JavaScript", "jQuery", "Struts", "MyBatis", "FusionCharts"],
+    portfolioSlug: "samsung-hpc",
   },
   {
     id: 7,
@@ -112,6 +113,7 @@ export const careers: CareerEntry[] = [
       "Managed Signage Services Platform: 광고 콘텐츠 편집 에디터 기능 개선 및 유지보수",
     ],
     techStack: ["JavaScript (Prototype.js)", "HTML", "CSS"],
+    portfolioSlug: "samsung-signage",
   },
   {
     id: 8,
@@ -129,6 +131,7 @@ export const careers: CareerEntry[] = [
       "웹툰 뷰어·결제 등 사용자 화면 개발 (PayPal 결제 연동 포함)",
     ],
     techStack: ["Java", "JSP", "JavaScript", "MyBatis"],
+    portfolioSlug: "rolling-story",
   },
   {
     id: 9,
@@ -146,6 +149,7 @@ export const careers: CareerEntry[] = [
       "OTP 인증, SMS 문자인증 등 보안 로그인 모듈 연동",
     ],
     techStack: ["Java", "SDP Framework", "JavaScript", "Oracle"],
+    portfolioSlug: "samsung-ssd",
   },
   {
     id: 10,
@@ -159,6 +163,7 @@ export const careers: CareerEntry[] = [
     description: "삼성반도체 반도체 공정관리 시스템 내재화 개발",
     details: ["공정관리 화면 개발 (자체 JS 프레임워크 기반)"],
     techStack: ["JavaScript"],
+    portfolioSlug: "samsung-display-process",
   },
   {
     id: 11,
@@ -181,6 +186,7 @@ export const careers: CareerEntry[] = [
       "jQuery",
       "Oracle/MySQL",
     ],
+    portfolioSlug: "grinus-interior",
   },
   {
     id: 12,
@@ -199,6 +205,10 @@ export const careers: CareerEntry[] = [
       "DB 모델링 및 데이터 정합성 검증 체계 운영",
     ],
     techStack: ["Java", "SQL"],
+    portfolioSlug: "samsung-electro-dqm",
+    screenshots: [
+      { src: "/img/DQM/DQM.jpg", alt: "DQXpress 데이터 품질 관리 대시보드", caption: "이해를 돕기 위한 샘플 사진입니다. (보안 때문에 실제 화면 사진이 없습니다.)" },
+    ],
   },
   {
     id: 13,
@@ -216,6 +226,7 @@ export const careers: CareerEntry[] = [
       "OHT(자동반송장치) 실시간 운행 현황 및 구간별 병목 모니터링 화면 개발",
     ],
     techStack: ["D3.js", "JavaScript", "HTML5"],
+    portfolioSlug: "samsung-oht-monitoring",
   },
   {
     id: 14,
@@ -240,6 +251,7 @@ export const careers: CareerEntry[] = [
       "HTML",
       "CSS",
     ],
+    portfolioSlug: "samsung-wiznet",
   },
   {
     id: 15,
@@ -265,6 +277,7 @@ export const careers: CareerEntry[] = [
       "HTML",
       "CSS",
     ],
+    portfolioSlug: "samsung-file-share",
   },
   {
     id: 16,
@@ -289,6 +302,7 @@ export const careers: CareerEntry[] = [
       "HTML",
       "CSS",
     ],
+    portfolioSlug: "samsung-education",
   },
   {
     id: 17,
@@ -308,6 +322,7 @@ export const careers: CareerEntry[] = [
       "일 1회 Rule 자동 업데이트 배치 개발",
     ],
     techStack: ["Vue.js", "Vuetify", "Jest", "Java", "Spring"],
+    portfolioSlug: "samsung-wiznet-ramdump",
   },
   {
     id: 18,

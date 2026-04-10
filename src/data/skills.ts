@@ -19,6 +19,9 @@ export const skills: SkillGroup[] = [
       { name: "JavaScript", level: "expert" },
       { name: "jQuery", level: "expert" },
       { name: "Vue.js", level: "advanced" },
+      { name: "React", level: "intermediate" },
+      { name: "Next.js", level: "intermediate" },
+      { name: "TypeScript", level: "intermediate" },
       { name: "HTML/CSS", level: "expert" },
       { name: "D3.js", level: "intermediate" },
       { name: "Vuetify", level: "intermediate" },
@@ -46,12 +49,9 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    category: "Learning",
+    category: "AI & Automation",
     items: [
-      { name: "Next.js", level: "learning" },
-      { name: "React", level: "learning" },
-      { name: "TypeScript", level: "learning" },
-      { name: "AI 개발", level: "learning" },
+      { name: "AI 개발", level: "intermediate" },
     ],
   },
 ];

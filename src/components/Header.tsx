@@ -8,7 +8,6 @@ const navLinks = [
   { href: "#career", label: "경력" },
   { href: "#skills", label: "기술" },
   { href: "#projects", label: "프로젝트" },
-  { href: "#contact", label: "연락처" },
 ];
 
 export default function Header() {
