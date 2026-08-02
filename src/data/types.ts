@@ -54,9 +54,17 @@ export interface ProjectDetail {
   description: string;
   techStack: string[];
   highlights: string[];
+  caseStudy: {
+    problem: string;
+    role: string[];
+    solution: string[];
+    result: string[];
+  };
   screenshots: {
     src: string;
     alt: string;
+    width: number;
+    height: number;
     placeholder?: boolean;
     type?: "mobile" | "web";
     caption?: string;
@@ -75,9 +83,7 @@ export interface CompanyPortfolio {
 
 export interface ProfileData {
   name: { ko: string; en: string };
-  birthDate: string;
   email: string;
-  phone: string;
   title: string;
   summary: string[];
   desiredLocations: string[];

@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { createProjectMetadata } from "@/lib/project-metadata";
+
+export const metadata = createProjectMetadata("samsung-wiznet-ramdump");
 
 export default function SamsungWiznetRamdumpPage() {
   return (

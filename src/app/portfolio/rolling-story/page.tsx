@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { createProjectMetadata } from "@/lib/project-metadata";
+
+export const metadata = createProjectMetadata("rolling-story");
 
 export default function RollingStoryPage() {
   return (

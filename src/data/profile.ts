@@ -2,15 +2,13 @@ import type { ProfileData, Education, Certification, Training } from "./types";
 
 export const profile: ProfileData = {
   name: { ko: "권득천", en: "Kwon Deuk Cheon" },
-  birthDate: "1982.10.09",
   email: "kweon82@naver.com",
-  phone: "010-5292-9461",
-  title: "풀스택 웹 개발자",
+  title: "Java/Spring B2B 시니어 개발자",
   summary: [
-    "빠른 적응력, 정확한 결과물. 다양한 현장에서 검증된 풀스택 개발자.",
+    "Java·Spring 기반 B2B 시스템을 요구사항 정의부터 설계, 구현, 안정화까지 책임지는 시니어 풀스택 개발자.",
   ],
   desiredLocations: ["경기 화성시", "경기 용인시 기흥구", "경기 성남시 분당구"],
-  desiredEmployment: ["정규직", "프리랜서"],
+  desiredEmployment: ["정규직"],
 };
 
 export const educations: Education[] = [

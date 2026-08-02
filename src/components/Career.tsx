@@ -2,34 +2,43 @@ import { careers } from "@/data/career";
 import CareerCard from "./CareerCard";
 
 export default function Career() {
-  const sorted = [...careers].reverse();
-
-  const devCareers = careers.filter((c) => c.category !== "production");
-  const clients = new Set(
-    careers.filter((c) => c.client).map((c) => c.client)
-  );
+  const developmentCareers = careers
+    .filter((entry) => entry.category !== "production")
+    .toReversed();
+  const recentCareers = developmentCareers.slice(0, 6);
+  const earlierCareers = developmentCareers.slice(6);
 
   return (
-    <section id="career" className="pt-28 pb-20 px-6 bg-stone-50 dark:bg-stone-900/50">
-      <div className="max-w-5xl mx-auto">
-        <div className="flex items-baseline gap-4 mb-4">
-          <span className="text-sm font-mono text-stone-500 dark:text-stone-400">02</span>
-          <h2 className="font-display text-2xl md:text-3xl font-bold leading-tight">경력</h2>
+    <section id="career" className="section-block career-section">
+      <div className="site-container">
+        <div className="section-heading">
+          <p className="section-index">04 / Experience</p>
+          <div>
+            <h2>최근 경험부터 빠르게 확인하세요.</h2>
+            <p>
+              2012년 이후 17건의 개발 프로젝트를 수행했습니다. 최근 경험은
+              바로 보여주고, 이전 경력은 필요할 때 펼쳐 볼 수 있게 정리했습니다.
+            </p>
+          </div>
         </div>
 
-        {/* Stats — inline prose */}
-        <p className="text-lg text-stone-500 dark:text-stone-400 mb-12 ml-8 leading-[1.7]">
-          <span className="font-semibold text-stone-900 dark:text-stone-100">17년</span> 이상의 경력,{" "}
-          <span className="font-semibold text-stone-900 dark:text-stone-100">{devCareers.length}개</span> 개발 프로젝트,{" "}
-          <span className="font-semibold text-stone-900 dark:text-stone-100">{clients.size}곳</span> 주요 고객사
-        </p>
-
-        {/* Career Timeline */}
-        <div className="relative border-l-2 border-stone-200 dark:border-stone-700 ml-2">
-          {sorted.map((entry) => (
+        <div className="career-list">
+          {recentCareers.map((entry) => (
             <CareerCard key={entry.id} entry={entry} />
           ))}
         </div>
+
+        <details className="career-archive">
+          <summary>
+            <span>2012 — 2021 이전 개발 경력</span>
+            <strong>{earlierCareers.length}개 프로젝트 펼쳐 보기</strong>
+          </summary>
+          <div className="career-list archived">
+            {earlierCareers.map((entry) => (
+              <CareerCard key={entry.id} entry={entry} />
+            ))}
+          </div>
+        </details>
       </div>
     </section>
   );

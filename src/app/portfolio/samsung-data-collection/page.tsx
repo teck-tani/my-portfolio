@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { createProjectMetadata } from "@/lib/project-metadata";
+
+export const metadata = createProjectMetadata("samsung-data-collection");
 
 export default function SamsungDataCollectionPage() {
   return (

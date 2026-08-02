@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { createProjectMetadata } from "@/lib/project-metadata";
+
+export const metadata = createProjectMetadata("samsung-b2b-pl");
 
 export default function SamsungB2bPlPage() {
   return (

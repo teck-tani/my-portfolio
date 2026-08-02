@@ -1,5 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
+import { createProjectMetadata } from "@/lib/project-metadata";
+
+export const metadata = createProjectMetadata("samsung-bio-dqm");
 
 export default function SamsungBioDqmPage() {
   return (

@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { createProjectMetadata } from "@/lib/project-metadata";
+
+export const metadata = createProjectMetadata("samsung-display-process");
 
 export default function SamsungDisplayProcessPage() {
   return (

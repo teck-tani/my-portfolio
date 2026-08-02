@@ -1,38 +1,39 @@
 import { skills } from "@/data/skills";
 
-const skillColor =
-  "bg-teal-100 text-teal-800 dark:bg-teal-900/40 dark:text-teal-300";
+const levelLabels = {
+  expert: "주력",
+  advanced: "숙련",
+  intermediate: "활용",
+};
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 px-6">
-      <div className="max-w-5xl mx-auto">
-        <div className="flex items-baseline gap-4 mb-10">
-          <span className="text-sm font-mono text-stone-500 dark:text-stone-400">03</span>
-          <h2 className="font-display text-2xl md:text-3xl font-bold leading-tight">기술 스택</h2>
+    <section id="skills" className="section-block skills-section">
+      <div className="site-container skills-layout">
+        <div className="skills-intro">
+          <p className="section-index">03 / Technical range</p>
+          <h2>핵심 기술과 수행 역량</h2>
+          <p>
+            채용 포지션과 직접 연결되는 Java·Spring·SQL을 중심에 두고,
+            프론트엔드와 모바일은 업무 흐름을 완성하는 도구로 활용합니다.
+          </p>
         </div>
 
-        {/* Main Skills — flat list, no cards */}
-        <div className="grid md:grid-cols-2 gap-x-12 gap-y-8">
+        <div className="skill-groups">
           {skills.map((group) => (
-            <div key={group.category}>
-              <h3 className="text-sm font-semibold text-stone-800 dark:text-stone-200 uppercase tracking-wide mb-3">
-                {group.category}
-              </h3>
-              <div className="flex flex-wrap gap-2">
+            <section key={group.category} className="skill-group">
+              <h3>{group.category}</h3>
+              <ul>
                 {group.items.map((skill) => (
-                  <span
-                    key={skill.name}
-                    className={`px-3 py-1.5 text-sm rounded-full ${skillColor}`}
-                  >
-                    {skill.name}
-                  </span>
+                  <li key={skill.name}>
+                    <span>{skill.name}</span>
+                    <small>{levelLabels[skill.level]}</small>
+                  </li>
                 ))}
-              </div>
-            </div>
+              </ul>
+            </section>
           ))}
         </div>
-
       </div>
     </section>
   );

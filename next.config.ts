@@ -1,6 +1,19 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          {
+            key: "X-Robots-Tag",
+            value: "noindex, nofollow, noarchive, nosnippet, noimageindex",
+          },
+        ],
+      },
+    ];
+  },
   images: {
     // Vercel Hobby 플랜의 이미지 최적화 변환 한도를 넘기면 /_next/image 가
     // 402(OPTIMIZED_IMAGE_REQUEST_PAYMENT_REQUIRED)를 반환해 모든 이미지가 깨진다.

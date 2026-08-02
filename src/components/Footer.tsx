@@ -1,8 +1,15 @@
+import { profile } from "@/data/profile";
+import Link from "next/link";
+
 export default function Footer() {
   return (
-    <footer className="py-8 px-6 border-t border-stone-200 dark:border-stone-800">
-      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-stone-500">
-        <p>&copy; 2026 권득천. All rights reserved.</p>
+    <footer className="site-footer">
+      <div className="site-container footer-inner">
+        <p>© 2026 권득천</p>
+        <div>
+          <a href={`mailto:${profile.email}`}>이메일</a>
+          <Link href="/#hero">맨 위로</Link>
+        </div>
       </div>
     </footer>
   );

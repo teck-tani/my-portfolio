@@ -1,27 +1,19 @@
-import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import FeaturedProjects from "@/components/FeaturedProjects";
 import About from "@/components/About";
-import Career from "@/components/Career";
 import Skills from "@/components/Skills";
-import Footer from "@/components/Footer";
+import Career from "@/components/Career";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
-    <>
-      <a
-        href="#main"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[60] focus:px-4 focus:py-2 focus:bg-stone-900 focus:text-white focus:rounded-lg focus:text-sm"
-      >
-        본문으로 건너뛰기
-      </a>
-      <Header />
-      <main id="main">
-        <Hero />
-        <About />
-        <Career />
-        <Skills />
-      </main>
-      <Footer />
-    </>
+    <main id="main">
+      <Hero />
+      <FeaturedProjects />
+      <About />
+      <Skills />
+      <Career />
+      <Contact />
+    </main>
   );
 }
